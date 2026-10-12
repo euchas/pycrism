@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, together with Viviano-Beck et al. (2014) for the parameter definitions."
+type: software
+title: "pycrism: CRISM summary parameters, cube readers and browse products in pure NumPy"
+version: 0.1.0
+date-released: 2026-10-12
+license: MIT
+repository-code: "https://github.com/euchas/pycrism"
+url: "https://github.com/euchas/pycrism"
+authors:
+  - family-names: Valantinas
+    given-names: Adomas
+    orcid: "https://orcid.org/0000-0001-9995-3335"
+    affiliation: "University of Cambridge"
+keywords:
+  - Mars
+  - CRISM
+  - Mars Reconnaissance Orbiter
+  - hyperspectral
+  - summary parameters
+  - band depth
+  - ENVI
+  - PDS3
+abstract: >-
+  Pure-NumPy implementation of the CRISM summary parameters of Viviano-Beck
+  et al. (2014): the VNIR (S-detector) set, the non-retired IR (L-detector)
+  set and the standard browse-product recipes, with readers for ENVI (TER3,
+  MTR3, map-projected VNIR) and PDS3 (TRR3, WA, DDR) products and a
+  command-line tool. No ENVI, IDL or CRISM Analysis Toolkit needed.
+references:
+  - type: article
+    authors:
+      - family-names: Viviano-Beck
+        given-names: Christina E.
+      - family-names: Seelos
+        given-names: Frank P.
+      - family-names: Murchie
+        given-names: Scott L.
+      - family-names: Kahn
+        given-names: Eliezer G.
+      - family-names: Seelos
+        given-names: Kimberly D.
+      - family-names: Taylor
+        given-names: Howard W.
+      - family-names: Taylor
+        given-names: Kelly
+      - family-names: Ehlmann
+        given-names: Bethany L.
+      - family-names: Wiseman
+        given-names: Sandra M.
+      - family-names: Mustard
+        given-names: John F.
+      - family-names: Morgan
+        given-names: M. Frank
+    title: "Revised CRISM spectral parameters and summary products based on the currently detected mineral diversity on Mars"
+    journal: "Journal of Geophysical Research: Planets"
+    volume: 119
+    issue: 6
+    start: 1403
+    end: 1431
+    year: 2014
+    doi: 10.1002/2014JE004627
