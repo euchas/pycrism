@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycrism"
+version = "0.1.0"
+description = "CRISM summary parameters (Viviano-Beck et al. 2014), cube readers and browse products in pure NumPy"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Adomas Valantinas" }]
+keywords = ["Mars", "CRISM", "MRO", "hyperspectral", "summary parameters", "spectral parameters",
+            "band depth", "ENVI", "PDS3", "planetary science"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.23",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.6"]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/euchas/pycrism"
+Repository = "https://github.com/euchas/pycrism"
+Issues = "https://github.com/euchas/pycrism/issues"
+Changelog = "https://github.com/euchas/pycrism/blob/main/CHANGELOG.md"
+
+[project.scripts]
+pycrism = "pycrism.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
